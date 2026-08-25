@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    min-height: calc(100vh - 100px);
+}
+
+hr {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+main {
+    display: inline-flex;
+    justify-content: center;
+    align-items: start;
+    height: fit-content;
+}
+
+section {
+    width: 25%;
+    margin: auto;
+}
+
+section > h2 {
+    margin-bottom: 10px;
+}
+
+section > ul, section > ul > li {
+    width: 100%;
+    text-align: start;
+}
