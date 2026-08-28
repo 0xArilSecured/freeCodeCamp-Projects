@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: 100dvh;
+    min-width: 100dvw;
+
+}
+
+.container {
+    background: #fff;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+h1.title {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+input:first-of-type {
+    outline: none;
+}
+
+:is(input[type="text"], input[type="email"], textarea, select) {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+[required] {
+    border: 1px solid crimson;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid green;
+    outline: none;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border: 1px solid red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border: 1px solid green;
+}
+
+select, option {
+    cursor: pointer;
+}
+
+.left-label {
+    text-align: left;
+    display: block;
+}
+
+label {
+    font-weight: 600;
+}
+
+fieldset {
+    padding: 20px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+:is(input[type="radio"], label[for="full-time"], label[for="part-time"]) {
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    aspect-ratio: 1;
+    border: 2px solid gray;
+    border-radius: 50%;
+    vertical-align: bottom;
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-group input[type="radio"]::before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: green;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.radio-group input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px rgba(0, 128, 0, 0.3);
+    border: 2px solid green;
+    background-color: green;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    color: green;
+}
+
+.radio-group input[type="radio"]:checked::before {
+    opacity: 1;
+}
+
+.radio-group label:checked {
+    color: green;
+}
+
+button {
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
