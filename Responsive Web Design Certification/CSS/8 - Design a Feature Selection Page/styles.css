@@ -1,0 +1,87 @@
+:root {
+    font-size: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: solid; */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+h1.title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.feature-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.1rem;
+}
+
+.feature-card {
+    position: relative;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    width: 300px;
+    height: 140px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card:hover {
+    border: 1px solid #F1BE32;
+    box-shadow: 1px 1px 10px 1px #f1be329b;
+}
+
+input {
+    display: block;
+    appearance: none;
+    border: 1px solid #d3d3d3;
+    width: 24px;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #F1BE32;
+    border-color: #F1BE32;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: 2px;
+    right: 6px;
+}
+
+p, h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
