@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.pricing-container {
+    padding: 12px;
+    border: 1px solid black;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 200px;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.pricing-card:hover {
+    transform: scale(103%);
+}
+
+.pricing-card hr {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 16px;
+}
+
+.basic-plan {
+    order: 0;
+    flex-grow: 1;
+}
+
+.pro-plan {
+    order: 1;
+    flex-grow: 2;
+}
+
+.premium-plan {
+    order: 2;
+    flex-grow: 1;
+}
+
+.correct-feature {
+    margin-right: 4px;
+    color: green;
+    font-weight: 900;
+}
+
+.wrong-feature {
+    margin-right: 4px;
+    font-weight: 900;
+    color: red;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    background-color: orange;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
