@@ -45,8 +45,6 @@ body {
 }
 
 .left, .middle, .right {
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -56,16 +54,22 @@ body {
 }
 
 .left {
-    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
 }
 
 .middle {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     font-size: 80px;
 }
 
 .right {
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
 }
 
 .right div, .upside-down {
