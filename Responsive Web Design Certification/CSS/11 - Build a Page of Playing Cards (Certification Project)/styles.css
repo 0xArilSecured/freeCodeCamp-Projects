@@ -2,7 +2,7 @@
     --background: hsl(300, 24%, 80%);
     --card-background: hsl(0, 0%, 100%);
 
-    --red:  hsl(0, 100%, 50%);
+    --red: hsl(0, 100%, 50%);
     --black: hsl(0, 0%, 0%);
 }
 
@@ -44,11 +44,14 @@ body {
     color: var(--black);
 }
 
-.left, .middle, .right {
+.left,
+.middle,
+.right {
     align-items: center;
 }
 
-.left, .right {
+.left,
+.right {
     font-size: 24px;
     font-weight: 900;
 }
@@ -72,6 +75,7 @@ body {
     align-self: flex-end;
 }
 
-.right div, .upside-down {
+.right div,
+.upside-down {
     transform: rotate(180deg);
 }
