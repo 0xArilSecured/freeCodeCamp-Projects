@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+@media(prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+thead tr {
+    background-image: linear-gradient(to bottom, #B9E9FC, #71D3F9);
+}
+
+th, td {
+    padding: 0.25rem 0;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border-radius: 32px;
+    border: 2px solid #F63827;
+    background-image: linear-gradient(to bottom, #FF8176, #FF2512);
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border-radius: 32px;
+    border: 2px solid #D7A74A;
+    background-image: linear-gradient(to bottom, #E7B75A, #F3A916);
+}
+
+tr[class="read"] span[class="status"] {
+    border-radius: 32px;
+    border: 2px solid #56DB56;
+    background-image: linear-gradient(to bottom, #8AEE8A, #2CE02C);
+}
+
+span[class="status"], span[class^="rate"] {
+    height: fit-content;
+    width: 100px;
+    padding: 0.5rem 0;
+    margin: 0 0.5rem;
+}
+
+span[class^="rate"] {
+    height: fit-content;
+    width: 100px;
+    padding: 0.5rem 0;
+    margin: 0 0.5rem;
+}
+
+span[class^="rate"] > span {
+    border: 2px solid #A9A16A;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0 0.05rem;
+    background-color: #F4F0F0;
+}
+
+span[class~="one"] > span:first-of-type {
+    background-image: linear-gradient(to bottom, #FFE255, #FFD60C);
+}
+
+span[class~="two"] > span:nth-of-type(-n+2) {
+    background-image: linear-gradient(to bottom, #FFE255, #FFD60C);
+}
+
+span[class~="three"] > span {
+    background-image: linear-gradient(to bottom, #FFE255, #FFD60C);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to bottom, #F5F8F5, #D5E3D5);
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to bottom, #FFEFCF, #FFDC97);
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(to bottom, #CDFFCD, #9BFF9B);
+}
