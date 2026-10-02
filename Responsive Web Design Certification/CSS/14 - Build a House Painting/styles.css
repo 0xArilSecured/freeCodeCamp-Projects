@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: skyblue;
+}
+
+.halaman {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: green;
+}
+
+#house {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: #FF9980;
+    border: 5px solid #B35900;
+}
+
+#house > div {
+    position: absolute;
+}
+
+#chimney {
+    top: -80px;
+    right: 60px;
+    z-index: -1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 80px;
+    background-color: #E6E6E6;
+    border: 3px solid black;
+}
+
+#chimney > div {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
+#roof {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border: 0px solid;
+    background-color: transparent;
+}
+
+#roof > div {
+    position: absolute;
+    top: 0;
+    left: -60px;
+
+    display: flex;
+    gap: 32px;
+
+    width: 100%;
+    height: 100%;
+}
+
+#roof > div > div {
+    flex-shrink: 0;
+    width: 10px;
+    height: 200px;
+    background-color: #B35900;
+}
+
+.rotate-left {
+    z-index: 1;
+}
+
+.rotate-right {
+    z-index: 2;
+}
+
+.rotate-left > div {
+    transform: rotate(45deg) translate(-80px, 0px);
+}
+
+.rotate-right > div {
+    transform: rotate(-45deg) translate(64px, 0px);
+}
+
+#window-1 {
+    position: absolute;
+    top: 160px;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid #B35900;
+    height: 100px;
+    width: 100px;
+    background-color: #FFFFB3;
+}
+
+#window-1 > div {
+    width: 4px;
+    height: 100%;
+    background-color: #B35900;
+}
+
+#window-2 {
+    position: absolute;
+    top: 160px;
+    right: 40px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid #B35900;
+    height: 100px;
+    width: 100px;
+    background-color: #FFFFB3;
+}
+
+#window-2 > div {
+    width: 4px;
+    height: 100%;
+    background-color: #B35900;
+}
+
+#door {
+    position: absolute;
+    bottom: 0px;
+    left: 38%;
+    width: 120px;
+    height: 200px;
+    border: 5px solid #B35900;
+    background-color: #E6E6E6;
+}
+
+#door > div {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 16px;
+    height: 16px;
+    background-color: #B35900;
+    border-radius: 50%;    
+}
